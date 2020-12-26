@@ -6,22 +6,7 @@ import Root from "../components/page/root"
 import Sample from "../components/page/sample"
 import "../components/layout.css"
 
-// test
-import { useDispatch } from "react-redux"
-import { setScreenWidth } from "../actions/configAction"
-
 const App = () => {
-  const dispatch = useDispatch()
-
-  useEffect(() => {
-    // 초기 브라우저 width 셋팅
-    dispatch(setScreenWidth(window.innerWidth > 500 ? 500 : window.innerWidth))
-    // 브라우저 width 조절 시 셋팅
-    window.addEventListener("resize", function (e) {
-      dispatch(setScreenWidth(e.target.innerWidth))
-    })
-  }, [])
-
   return (
     <Router basepath="/app" style={{ width: "100%", height: "100%" }}>
       {/* 로그인/회원가입 */}
