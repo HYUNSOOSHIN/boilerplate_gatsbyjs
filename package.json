@@ -23,8 +23,6 @@
     "react-dom": "^16.12.0",
     "react-helmet": "^6.1.0",
     "react-redux": "^7.2.2",
-    "react-swipeable-views": "^0.13.9",
-    "react-swipeable-views-utils": "^0.14.0-alpha.0",
     "redux": "^4.0.5",
     "redux-actions": "^2.6.5",
     "redux-logger": "^3.0.6",

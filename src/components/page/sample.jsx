@@ -9,7 +9,15 @@ const Sample = props => {
   const [popup, setPopup] = useState(false)
 
   return (
-    <Layout>
+    <Layout
+      title={"샘플"}
+      leftComponent={
+        <>
+          <button style={{ marginLeft: "15px" }}>버튼</button>
+        </>
+      }
+      rightComponent={null}
+    >
       <BasicPopup
         open={popup}
         onClose={value => {

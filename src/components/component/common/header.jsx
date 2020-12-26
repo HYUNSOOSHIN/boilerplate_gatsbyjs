@@ -6,11 +6,11 @@ const Header = props => {
 
   return (
     <Container on={isHeader ? "on" : "off"}>
-      <div style={{ display: "flex", flex: 1, justifyContent: "flex-start", alignItems: "center" }}>{leftComponent ? leftComponent : null}</div>
+      <ComponentBox>{leftComponent ? leftComponent : null}</ComponentBox>
       <TitleBox>
         <p>{title}</p>
       </TitleBox>
-      <div style={{ display: "flex", flex: 1, justifyContent: "flex-end", alignItems: "center" }}> {rightComponent ? rightComponent : null}</div>
+      <ComponentBox> {rightComponent ? rightComponent : null}</ComponentBox>
     </Container>
   )
 }
@@ -25,10 +25,22 @@ const Container = styled.div`
   height: 50px;
 `
 
+const ComponentBox = styled.div`
+  display: flex;
+  flex: 1;
+  justify-content: flex-start;
+  align-items: center;
+`
+
 const TitleBox = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
   width: fit-content;
   height: 100%;
+  & > p {
+    color: #000;
+    font-size: 20px;
+    font-family: NanumSquareBold;
+  }
 `

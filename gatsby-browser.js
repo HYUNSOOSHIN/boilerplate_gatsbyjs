@@ -6,6 +6,6 @@
 
 // You can delete this file if you're not using it
 
-import reduxStore from './reduxStore';
+import reduxStore from "./reduxStore"
 
-export const wrapRootElement = reduxStore;
+export const wrapRootElement = reduxStore

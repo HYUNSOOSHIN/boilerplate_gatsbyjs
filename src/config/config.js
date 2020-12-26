@@ -1,11 +1,13 @@
-const type = 'dev';
+const type = "dev"
 
 const url = {
-    prod: {},
-    dev: {
-        apiURL: 'https://api.tramsvolunteer.tk/volunteer',
-    },
-};
+  prod: {
+    apiURL: "",
+  },
+  dev: {
+    apiURL: "",
+  },
+}
 module.exports = {
-    API_URL: url[type].apiURL,
-};
+  API_URL: url[type].apiURL,
+}

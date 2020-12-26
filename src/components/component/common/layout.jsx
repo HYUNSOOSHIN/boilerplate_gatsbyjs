@@ -3,7 +3,9 @@ import styled from "styled-components"
 import Header from "./header"
 
 const Layout = props => {
-  const { children, isHeader = true, title = "", leftComponent = null, rightComponent = null } = props
+  const { children } = props
+  // header
+  const { isHeader = true, title = "", leftComponent = null, rightComponent = null } = props
 
   return (
     <Container>

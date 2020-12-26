@@ -15,6 +15,7 @@ const postSample = async data => {
   const result = await api.post(`/sample`, {
     body: data,
     token: token,
+    loading: false,
   })
   return result.data
 }
