@@ -24,6 +24,14 @@ body {
   overflow: hidden;
 }
 
+/* 웹 페이지 높이 100% 사용하는 코드 */
+html,
+body,
+#___gatsby,
+#gatsby-focus-wrapper {
+  height: 100%;
+}
+
 /* 브라우저 스크롤 지우기 */
 html,
 div {
@@ -35,10 +43,7 @@ div::-webkit-scrollbar {
   display: none; /* Chrome, Safari, Opera*/
 }
 
-/* 웹 페이지 높이 100% 사용하는 코드 */
-html,
-body,
-#___gatsby,
-#gatsby-focus-wrapper {
-  height: 100%;
+button {
+  border: none;
+  outline: none;
 }
