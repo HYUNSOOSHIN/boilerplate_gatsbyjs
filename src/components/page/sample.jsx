@@ -2,6 +2,7 @@ import React, { useState } from "react"
 import styled from "styled-components"
 import SampleContainer from "../../containers/sampleContainer"
 import Layout from "../component/common/layout"
+import SEO from "../seo"
 import BasicPopup from "../../popups/basicPopup"
 
 const Sample = props => {
@@ -18,6 +19,7 @@ const Sample = props => {
       }
       rightComponent={null}
     >
+      <SEO title={"샘플페이지"} />
       <BasicPopup
         open={popup}
         onClose={value => {

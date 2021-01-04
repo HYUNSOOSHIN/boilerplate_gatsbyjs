@@ -26,17 +26,12 @@ body {
 
 /* 브라우저 스크롤 지우기 */
 html,
-div,
-section,
-button {
+div {
   -ms-overflow-style: none; /* IE and Edge */
   scrollbar-width: none; /* Firefox */
 }
-
 html::-webkit-scrollbar,
-div::-webkit-scrollbar,
-section::-webkit-scrollbar,
-button::-webkit-scrollbar {
+div::-webkit-scrollbar {
   display: none; /* Chrome, Safari, Opera*/
 }
 
@@ -46,31 +41,4 @@ body,
 #___gatsby,
 #gatsby-focus-wrapper {
   height: 100%;
-}
-
-body {
-  margin: 0px;
-  font-size: 16px;
-  font-family: NanumSquareRegular;
-}
-p {
-  margin: 0;
-}
-button {
-  background-color: inherit;
-  padding: 0px;
-  border: none;
-  outline: none;
-}
-input {
-  outline: none;
-  color: #2d2f31;
-  font-family: NanumSquareBold;
-}
-input::placeholder {
-  color: #cad0d6;
-  font-family: NanumSquareBold;
-}
-input[type="password"] {
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
