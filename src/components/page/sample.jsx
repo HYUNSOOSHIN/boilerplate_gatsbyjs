@@ -11,7 +11,7 @@ const Sample = props => {
 
   return (
     <Layout
-      title={"샘플"}
+      title="샘플"
       leftComponent={
         <>
           <button style={{ marginLeft: "15px" }}>버튼</button>
@@ -19,7 +19,7 @@ const Sample = props => {
       }
       rightComponent={null}
     >
-      <SEO title={"샘플페이지"} />
+      <SEO title="샘플페이지" />
       <BasicPopup
         open={popup}
         onClose={value => {

@@ -2,17 +2,14 @@
   font-family: "NanumSquareRegular";
   src: url("../fonts/NanumSquareRegular.ttf");
 }
-
 @font-face {
   font-family: "NanumSquareLight";
   src: url("../fonts/NanumSquareLight.ttf");
 }
-
 @font-face {
   font-family: "NanumSquareBold";
   src: url("../fonts/NanumSquareBold.ttf");
 }
-
 @font-face {
   font-family: "NanumSquareExtraBold";
   src: url("../fonts/NanumSquareExtraBold.ttf");
