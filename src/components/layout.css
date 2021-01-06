@@ -44,3 +44,19 @@ button {
   border: none;
   outline: none;
 }
+
+input {
+  /*ios대응*/
+  -webkit-appearance: none;
+  -webkit-border-radius: 0;
+  -moz-appearance: none;
+  appearance: none;
+}
+
+select {
+  /*ios대응*/
+  -webkit-appearance: none;
+  -webkit-border-radius: 0;
+  -moz-appearance: none;
+  appearance: none;
+}
