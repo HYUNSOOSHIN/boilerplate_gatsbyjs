@@ -17,7 +17,11 @@
       "version": "detect"
     }
   },
-  "plugins": ["react", "react-hooks", "prettier"],
+  "plugins": [
+    "react",
+    "react-hooks",
+    "prettier"
+  ],
   "rules": {
     "react/display-name": 0,
     "react/no-unescaped-entities": 0,
@@ -28,11 +32,11 @@
     "prettier/prettier": [
       "error",
       {
-        "endOfLine": "auto",
-        "arrowParens": "avoid",
-        "semi": false,
+        "singleQuote": false,
         "tabWidth": 2,
-        "printWidth": 150
+        "semi": false,
+        "printWidth": 150,
+        "endOfLine": "auto"
       }
     ]
   }

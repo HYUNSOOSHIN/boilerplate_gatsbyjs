@@ -6,16 +6,16 @@ import actions from "../actions"
 const { setSample } = actions.SampleAction
 
 // redux state > component mapping
-const mapStateToProps = state => ({
+const mapStateToProps = (state) => ({
   sample: state.SampleReducer.sample,
 })
 
 // redux action > component mapping
-const mapDispatchToProps = dispatch => ({
-  setSample: param => dispatch(setSample(param)),
+const mapDispatchToProps = (dispatch) => ({
+  setSample: (param) => dispatch(setSample(param)),
 })
 
-const WithHoc = ChildComponent => props => {
+const WithHoc = (ChildComponent) => (props) => {
   return <ChildComponent {...props} />
 }
 

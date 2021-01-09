@@ -33,3 +33,81 @@ src
 ㄴ store
 ㄴ utils
 ```
+
+3. ESLint 관련
+
+- vscode extensionS에서 eslint 설치
+
+- setting.js 에 아래 코드 추가
+
+```
+ "editor.formatOnSave": true,
+  "editor.codeActionsOnSave": {
+    "source.fixAll.eslint": true
+  },
+  "eslint.packageManager": "yarn",
+  "[javascript]": {
+    "editor.formatOnSave": false
+  },
+  "[javascriptreact]": {
+    "editor.formatOnSave": false,
+  },
+  "[typescript]": {
+    "editor.formatOnSave": false
+  },
+  "[typescriptreact]": {
+    "editor.formatOnSave": false
+  },
+  "prettier.disableLanguages": ["js", "jsx", "ts", "tsx"],
+  "eslint.validate": [
+    "javascript",
+    "javascriptreact",
+  ],
+```
+
+- /root 에 .eslintrc 파일 추가
+
+```
+{
+  "parser": "babel-eslint",
+  "extends": [
+    "eslint:recommended",
+    "plugin:react/recommended",
+    "plugin:prettier/recommended"
+  ],
+  "env": {
+    "browser": true,
+    "es6": true,
+    "jasmine": true,
+    "jest": true
+  },
+  "settings": {
+    "react": {
+      "pragma": "React",
+      "version": "detect"
+    }
+  },
+  "plugins": [
+    "react",
+    "react-hooks",
+    "prettier"
+  ],
+  "rules": {
+    "react/display-name": 0,
+    "react/no-unescaped-entities": 0,
+    "react/prop-types": 0,
+    "no-undef": 0,
+    "no-console": 1,
+    "no-unused-vars": 1,
+    "prettier/prettier": [
+      "error",
+      {
+        "singleQuote": false,
+        "tabWidth": 2,
+        "printWidth": 150,
+        "endOfLine": "auto"
+      }
+    ]
+  }
+}
+```

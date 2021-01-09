@@ -4,7 +4,7 @@ import { setLoading } from "../actions/configAction"
 import { configureStore } from "../store"
 import { API_URL } from "../config/config"
 
-const apiFunction = method => {
+const apiFunction = (method) => {
   return async (url, { body = {}, header = {}, token = "" } = {}) => {
     configureStore.dispatch(setLoading(true))
     try {

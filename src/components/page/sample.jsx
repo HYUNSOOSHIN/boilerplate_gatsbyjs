@@ -5,7 +5,7 @@ import Layout from "../component/common/layout"
 import SEO from "../seo"
 import BasicPopup from "../../popups/basicPopup"
 
-const Sample = props => {
+const Sample = (props) => {
   const { sample, setSample } = props
   const [popup, setPopup] = useState(false)
 
@@ -22,7 +22,7 @@ const Sample = props => {
       <SEO title="샘플페이지" />
       <BasicPopup
         open={popup}
-        onClose={value => {
+        onClose={(value) => {
           if (value === "ㅇㅇ") {
             setPopup(false)
           }

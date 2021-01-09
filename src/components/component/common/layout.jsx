@@ -2,7 +2,7 @@ import React from "react"
 import styled from "styled-components"
 import Header from "./header"
 
-const Layout = props => {
+const Layout = (props) => {
   const { children } = props
   // header
   const { isHeader = true, title = "", leftComponent = null, rightComponent = null } = props

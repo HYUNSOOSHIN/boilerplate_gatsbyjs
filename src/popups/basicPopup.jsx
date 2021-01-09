@@ -4,7 +4,7 @@ import styled from "styled-components"
 import { Dialog } from "@material-ui/core"
 import { makeStyles } from "@material-ui/core/styles"
 
-const useStyles = makeStyles(theme => ({
+const useStyles = makeStyles((theme) => ({
   container: {
     "& .MuiDialog-paperFullWidth": {
       width: "100%",
@@ -13,11 +13,11 @@ const useStyles = makeStyles(theme => ({
   },
 }))
 
-const BasicPopup = props => {
+const BasicPopup = (props) => {
   const classes = useStyles()
   const { open, onClose, content, selectedValue } = props
 
-  const handleClose = value => {
+  const handleClose = (value) => {
     onClose(value)
   }
 
@@ -84,7 +84,7 @@ const Button = styled.button`
   padding: 0px;
   border-top: 1px solid #dddde5;
   border-radius: 0;
-  color: ${props => (props.one ? "#5e6a79" : "#ff499a")};
+  color: ${(props) => (props.one ? "#5e6a79" : "#ff499a")};
   font-size: 14px;
   font-family: NanumSquareExtraBold;
   line-height: 24.45px;

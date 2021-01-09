@@ -1,7 +1,7 @@
 import React from "react"
 import styled from "styled-components"
 
-const Header = props => {
+const Header = (props) => {
   const { isHeader = true, title, leftComponent = null, rightComponent = null } = props
 
   return (
@@ -18,7 +18,7 @@ const Header = props => {
 export default Header
 
 const Container = styled.div`
-  display: ${props => (props.on === "on" ? "flex" : "none")};
+  display: ${(props) => (props.on === "on" ? "flex" : "none")};
   justify-content: center;
   align-items: center;
   width: 100%;
