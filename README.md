@@ -1,4 +1,5 @@
 개츠비JS 보일러플레이트
+https://www.notion.so/rocket-js-e0f25d29d9864558bdad33027bce1b5b
 
 1. 실행방법
 
