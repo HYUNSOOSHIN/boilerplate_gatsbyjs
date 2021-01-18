@@ -15,6 +15,10 @@
   src: url("../fonts/NanumSquareExtraBold.ttf");
 }
 
+* {
+  box-sizing: border-box;
+}
+
 /* IOS html, body 스크롤 막기 */
 html,
 body {
