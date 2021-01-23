@@ -1,12 +1,14 @@
 import axios from "axios"
 import { navigate } from "gatsby"
-import { setLoading } from "../actions/configAction"
-import { configureStore } from "../store"
+// import { configureStore } from "../store"
+// import { setLoading } from "../actions/configAction"
 import { API_URL } from "../config/config"
 
 const apiFunction = (method) => {
-  return async (url, { body = {}, header = {}, token = "" } = {}) => {
-    configureStore.dispatch(setLoading(true))
+  return async (url, { body = {}, header = {}, token = "", loading = false } = {}) => {
+    if (loading) {
+      // configureStore.dispatch(setLoading(true))
+    }
     try {
       const result = await axios({
         method: method,
@@ -17,6 +19,7 @@ const apiFunction = (method) => {
           Authorization: `Bearer ${token}`,
           ...header,
         },
+        withCredentials: true,
       })
       return result
     } catch (err) {
@@ -33,7 +36,9 @@ const apiFunction = (method) => {
         }
       }
     } finally {
-      configureStore.dispatch(setLoading(false))
+      if (loading) {
+        // configureStore.dispatch(setLoading(false))
+      }
     }
   }
 }
