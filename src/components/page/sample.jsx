@@ -1,11 +1,15 @@
 import React, { useState } from "react"
 import styled from "styled-components"
+import { useSelector } from "react-redux"
+import { WidthToDP } from "../../utils/util"
+import SEO from "../seo"
 import SampleContainer from "../../containers/sampleContainer"
 import Layout from "../component/common/layout"
-import SEO from "../seo"
+import Button from "../component/sample/button"
 import BasicPopup from "../../popups/basicPopup"
 
 const Sample = (props) => {
+  const screenWidth = useSelector((state) => state.ConfigReducer.screenWidth)
   const { sample, setSample } = props
   const [popup, setPopup] = useState(false)
 
@@ -40,6 +44,20 @@ const Sample = (props) => {
       <section style={{ display: "flex", justifyContent: "center", alignItems: "center" }}>
         <Button onClick={() => setPopup(true)}>기본 팝업 열기</Button>
       </section>
+      <section>
+        <p>화면 넓이 : {screenWidth}</p>
+        <p style={{ marginTop: "10px" }}>제플린 360기준 > width: 50, height: 50</p>
+        <div
+          style={{
+            backgroundColor: "red",
+            display: "flex",
+            justifyContent: "center",
+            alignItems: "center",
+            width: WidthToDP(50),
+            height: WidthToDP(50),
+          }}
+        />
+      </section>
     </Layout>
   )
 }
@@ -47,15 +65,6 @@ const Sample = (props) => {
 export default SampleContainer(Sample)
 
 const Number = styled.p`
-  color: #000000;
-  font-size: 20px;
-  font-family: NanumSquareBold;
-`
-
-const Button = styled.button`
-  margin: 5px;
-  padding: 5px;
-  border: 1px solid #dbdbdb;
   color: #000000;
   font-size: 20px;
   font-family: NanumSquareBold;

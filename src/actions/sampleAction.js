@@ -2,7 +2,7 @@ import { createAction } from "redux-actions"
 import sampleApi from "../apis/sampleApis"
 
 // action type
-export const SET_SAMPLE = "@newProject/sample/SET_SAMPLE"
+export const SET_SAMPLE = "@boilerplate/sample/SET_SAMPLE"
 
 // action function
 export const setSample = createAction(SET_SAMPLE)

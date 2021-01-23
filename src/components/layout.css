@@ -45,6 +45,7 @@ div::-webkit-scrollbar {
 }
 
 button {
+  background-color: inherit;
   border: none;
   outline: none;
 }

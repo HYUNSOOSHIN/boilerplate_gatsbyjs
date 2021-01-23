@@ -1,4 +1,6 @@
 import { useSelector } from "react-redux"
+import { configureStore } from "../store"
+import reducer from "../reducers/config"
 
 // 전화번호에 - 붙이는 함수
 export function phoneNumFormat(num, type) {
@@ -30,4 +32,10 @@ export function phoneNumFormat(num, type) {
   }
 
   return formatNum
+}
+
+export function WidthToDP(px) {
+  const screenWidth = configureStore.getState().ConfigReducer.screenWidth
+  // 제플린 화면 넓이가 360 일 때
+  return (screenWidth / 360) * px
 }
