@@ -2,7 +2,7 @@ import axios from "axios"
 import { navigate } from "gatsby"
 // import { configureStore } from "../store"
 // import { setLoading } from "../actions/configAction"
-import { API_URL } from "../config/config"
+import { API_URL } from "../config"
 
 const apiFunction = (method) => {
   return async (url, { body = {}, header = {}, token = "", loading = false } = {}) => {
