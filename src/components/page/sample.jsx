@@ -5,7 +5,7 @@ import { WidthToDP } from "../../utils/util"
 import SEO from "../seo"
 import SampleContainer from "../../containers/sampleContainer"
 import Layout from "../component/common/layout"
-import Button from "../component/sample/button"
+import Button from "../component/button"
 import BasicPopup from "../../popups/basicPopup"
 
 const Sample = (props) => {
