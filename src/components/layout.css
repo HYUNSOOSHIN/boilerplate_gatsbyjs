@@ -2,14 +2,17 @@
   font-family: "NanumSquareRegular";
   src: url("../fonts/NanumSquareRegular.ttf");
 }
+
 @font-face {
   font-family: "NanumSquareLight";
   src: url("../fonts/NanumSquareLight.ttf");
 }
+
 @font-face {
   font-family: "NanumSquareBold";
   src: url("../fonts/NanumSquareBold.ttf");
 }
+
 @font-face {
   font-family: "NanumSquareExtraBold";
   src: url("../fonts/NanumSquareExtraBold.ttf");
@@ -20,40 +23,61 @@
 }
 
 /* IOS html, body 스크롤 막기 */
-html,
-body {
+html, body {
   overflow: hidden;
 }
 
 /* 웹 페이지 높이 100% 사용하는 코드 */
-html,
-body,
-#___gatsby,
-#gatsby-focus-wrapper {
+html, body, #___gatsby, #gatsby-focus-wrapper {
   height: 100%;
 }
 
 /* 브라우저 스크롤 지우기 */
-html,
-div {
-  -ms-overflow-style: none; /* IE and Edge */
-  scrollbar-width: none; /* Firefox */
+html, div {
+  -ms-overflow-style: none;
+  /* IE and Edge */
+  scrollbar-width: none;
+  /* Firefox */
 }
-html::-webkit-scrollbar,
-div::-webkit-scrollbar {
-  display: none; /* Chrome, Safari, Opera*/
+
+html::-webkit-scrollbar, div::-webkit-scrollbar {
+  display: none;
+  /* Chrome, Safari, Opera*/
 }
 
 button {
   background-color: inherit;
+  margin: 0px;
+  padding: 0px;
   border: none;
   outline: none;
 }
 
 input {
-  /*ios대응*/
+  /* ios 대응 */
   -webkit-appearance: none;
   -webkit-border-radius: 0;
+  border-radius: 0;
+  -moz-appearance: none;
+  appearance: none;
+}
+
+/* 비밀번호 "*" 표시 */
+input[type="password"] {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+/* 화살표 제거 */
+input[type="number"]::-webkit-outer-spin-button, input[type="number"]::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+textarea {
+  /* ios 대응 */
+  -webkit-appearance: none;
+  -webkit-border-radius: 0;
+  border-radius: 0;
   -moz-appearance: none;
   appearance: none;
 }
@@ -62,6 +86,7 @@ select {
   /*ios대응*/
   -webkit-appearance: none;
   -webkit-border-radius: 0;
+  border-radius: 0;
   -moz-appearance: none;
   appearance: none;
 }
