@@ -4,7 +4,7 @@ import { useSelector } from "react-redux"
 import { WidthToDP } from "../../utils/util"
 import SEO from "../seo"
 import SampleContainer from "../../containers/sampleContainer"
-import Layout from "../component/common/layout"
+import Layout from "../component/layout"
 import Button from "../component/button"
 import BasicPopup from "../../popups/basicPopup"
 
