@@ -1,6 +1,4 @@
-import { useSelector } from "react-redux"
 import { configureStore } from "../store"
-import reducer from "../reducers/config"
 
 // 전화번호에 - 붙이는 함수
 export function phoneNumFormat(num, type) {
