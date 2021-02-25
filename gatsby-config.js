@@ -33,5 +33,11 @@ module.exports = {
         images: `${__dirname}/src/images`,
       },
     },
+    {
+      resolve: `gatsby-plugin-env-variables`,
+      options: {
+        allowList: ["API_URL"],
+      },
+    },
   ],
 }
